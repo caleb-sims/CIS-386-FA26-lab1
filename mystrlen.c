@@ -1,6 +1,9 @@
 
 
-size_t mystrlen(const char *str);
+#include <stddef.h>
+#include <stdio.h>
+
+size_t my_strlen(const char *str);
 
 int main(int argc, char *argv[]) {
     
@@ -8,7 +11,6 @@ int main(int argc, char *argv[]) {
         printf("usage: %s <word>\n", argv[0]);
         return 1;
     }
-
 
     
     return 0;
